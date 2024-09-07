@@ -112,7 +112,10 @@ export default function App() {
         <div style={{display:linkdisplay}}>
           <div className="text-center">
             <h5>Preview</h5>
-            <img className="image-fluid" src={image} />
+            <div style={{maxWidth:'12rem',display:'block',margin:'auto'}} >
+
+            <img width={'100%'} className="image-fluid" src={image} />
+            </div>
           </div>
           <br />
           <a download={"QRcodeGenerator"} href={image}>
